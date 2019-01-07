@@ -1,0 +1,96 @@
+body{
+margin:0;
+padding:0;
+font-family: sans-serif;
+background:url(background.png) no-repeat;
+background-size:cover;
+}
+h1#welcome{
+color:#008080;
+text-align:center;
+font-size: 70px;
+font-family: sans-serif;
+margin-top: 15px;
+}
+h2{
+	color:#008080;
+	font-size: 30px;
+}
+
+.heading{
+	width: 30%;
+	margin: 30px auto;
+	text-align: center;
+	color: #688E23;
+	background: #FFF8OC;
+	border: 2px solid #688E23;
+	border-radius: 20px;
+}
+
+form{
+	width: 35%;
+	margin: 30px auto;
+	border-radius: 5px;
+	padding: 10px;
+	background: #FFF8OC;
+	border: 1px solid #688E23;
+}
+form p{
+	color: red;
+	margin: 0px;
+}
+.task_input{
+	width: 53%;
+	height: 15px;
+	padding: 10px;
+	border: 2px solid #688E23;
+}
+.add_btn{
+	height: 39px;
+	background: #FFF8OC;
+	color: #688E23;
+	border: 2px solid #688E23;
+	border-radius: 5px;
+	padding: 5px 20px;
+}
+table{
+	width: 50%;
+	margin: 30px auto;
+	border-collapse: collapse;
+}
+tr{
+	font-size: 19px;
+	color: #688E23;
+	text-align: center;
+}
+th{
+font-size: 19px;
+color: black;
+}
+th, td{
+	border: none;
+	height: 30px;
+	padding: 2px;
+}
+tr:hover {
+	background: #E9E9E9;
+}
+.task{
+	text-align: left;
+}
+.delete{
+	text-align: center;
+}
+.delete a{
+	color: white;
+	background: #a52a2a;
+	padding: 1px 6px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+
+
+
+
+

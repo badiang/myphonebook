@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+  <title>Register Form</title>
+<link rel="stylesheet" href="registerstyle.css">
+
+</head>
+
+<body>
+
+ <form action="insert.php" method="POST">
+ 	<div class="login-box">
+ <h1>Add New Account</h1>
+
+
+	<div class="textbox">
+
+    Name :
+   	<input type="text" name="username" required>
+</div>
+<div class="textbox">
+    Password :
+
+    <input type="password" name="password" required>
+</div>
+   
+<div class="textbox">
+    Gender :
+
+    
+
+     <input type="radio" name="gender" value="m" required>Male
+
+     <input type="radio" name="gender" value="f" required>Female
+
+</div>
+
+<div class="textbox">
+    Email :
+
+    <input type="email" name="email" required>
+
+</div>
+
+<div class="textbox">
+    Phone no :
+
+
+     <select name="phoneCode" required>
+
+      <option selected hidden value="">Select Code</option>
+
+      <option value="Globe">Globe</option>
+
+      <option value="Smart">Smart</option>
+
+      <option value="Sun">Sun</option>
+
+
+     </select>
+</div>
+	<div class="textbox">
+     <input type="phone" name="phone" required>
+</div>
+    <input type="submit" value="Submit">
+    <p>
+	Do you have Account already? <a href="login.php">Login</a>
+</p>
+
+ </form>
+
+</body>
+
+</html>
+
