@@ -36,7 +36,8 @@ if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) 
 
      $SELECT = "SELECT email From register Where email = ? Limit 1";
 
-     $INSERT = "INSERT Into register (username, password, gender, email, phoneCode, phone) values(?, ?, ?, ?, ?, ?)";
+     $INSERT = "INSERT INTO register ( username, password, gender, email, phoneCode, phone) VALUES ( ?, ?, ?, ?, ?, ?)";
+     
 
      //Prepare statement
 
@@ -58,7 +59,7 @@ if (!empty($username) || !empty($password) || !empty($gender) || !empty($email) 
 
       $stmt = $conn->prepare($INSERT);
 
-      $stmt->bind_param("ssssii", $username, $password, $gender, $email, $phoneCode, $phone);
+      $stmt->bind_param("ssssii", $username, md5($password), $gender, $email, $phoneCode, $phone);
 
       $stmt->execute();
 

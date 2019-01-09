@@ -8,8 +8,8 @@
 	if(isset($_POST['login'])){
 		$username = $_POST['username'];
 		$password = $_POST['password'];
-		
-		$login = "select * from register where username = '$username' AND password = '$password'";
+		$password = md5($password);
+		$login = "select * from register where username = '$username' AND password ='$password'";
 		$result = mysqli_query($conn, $login);
 		$count = mysqli_num_rows($result);
 		$row = mysqli_fetch_array($result);
